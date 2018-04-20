@@ -1,0 +1,65 @@
+﻿1.Maven项目的目录约定
+MavenProjectRoot(项目根目录)   
+ src   
+   main   
+      java ——存放项目的.java文件
+      resources ——存放项目资源文件，如spring, hibernate配置文件  
+   test  
+      java ——存放所有测试.java文件，如JUnit测试类   
+      resources ——存放项目资源文件，如spring, hibernate配置文件  
+   target ——项目输出位置   
+   pom.xml ----用于标识该项目是一个Maven项目
+
+2.使用Eclipse+Maven搭建Web应用
+推荐：https://www.cnblogs.com/hongmoshui/p/7994759.html
+https://blog.csdn.net/u011781521/article/details/53699833
+
+3.Eclipse下使用maven搭建多模块项目
+https://blog.csdn.net/qq_232911373/article/details/51381060
+
+4.对maven的通俗理解
+https://blog.csdn.net/qfikh/article/details/52743027
+
+5.Junit-单元测试
+ junit关键字使用说明：
+	(1).Assertions – 断言方法，org.junit.Assert.*;
+	(2).Exception testing – 异常测试，处理被测试代码抛出的异常
+	(3).Test fixtures – 测试上下文的初始化和清理
+	(4).Test execution order – 测试用例执行顺序
+	(5).Aggregating tests in Suites – 测试套件
+	(6).Ignoring Tests – 忽略测试用例
+	(7).Assumptions with Assume – 使用假设条件，满足条件才执行后续测试
+	(8).Matchers and assertThat – Hamcrest的matchers特性的断言
+	(9).Rules – 使用Rules定义扩展功能和测试用例的行为
+	(10).Parameterized Tests – 参数化的测试
+	(11).Theories – 科学理论推测测试
+	(12).Multithreaded code and Concurrency – 多线程和同步测试
+
+6.Jmock测试
+说明:Jmock是一个支持TDD(Test-driven Developtment)的java对象模拟的java类库。
+模拟对象通常被用于设计和测试程序中对象之间的交互。
+Jmock需要和JUnit之类的测试框架一起使用。
+在TDD模式下需要在功能代码实现之前编写单元测试。通常通过JUnit编写单元测试用例，JMock提供功能代码的模拟。
+
+7.Spring Boot 整合JUnit
+<dependency>
+<groupId>org.springframework.boot</groupId>
+<artifactId>spring-boot-starter-test</artifactId>
+<scope>test</scope>
+</dependency>
+
+@RunWith(SpringJUnit4ClassRunner.class)
+@TestPropertySource(locations = { "classpath:application.properties" })
+@SpringBootTest
+
+
+
+
+
+
+
+
+
+
+
+

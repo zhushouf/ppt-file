@@ -1,0 +1,66 @@
+1.spring简介
+（1）官网：
+http://spring.io
+（2）中文帮助
+http://spring.cndocs.ml
+
+2.spring模块
+Spring Framework项目网站： http://projects.spring.io/spring-framework/
+
+Spring主要提供依赖注入，事务管理，web应用程序，数据访问，消息，测试等等功能的支持
+
+各个组件的功能：
+Core Container
+spring-core, spring-beans： 提供基础功能，包括IoC和DI等特性。对依赖起到解耦作用（BeanFactory）。
+spring-context： 上下文模块，基于core和beans构建，context实现以类似JNDI注册表的方式访问beans（framework-style manner，通过对象id访问context中的对象）。此外，context增加了对国际化、事件传播、资源加载、JavaEE（EJB,JMX,RMI）以及让容器透明地创建context等功能的支持。ApplicationContext是此模块的重点。
+spring-context-support：为第三方包的集成提供支持，例如：caching (EhCache, Guava, JCache), mailing (JavaMail), scheduling (CommonJ, Quartz) and template engines (FreeMarker, JasperReports, Velocity)。
+spring-expression：提供SPEL支持，可以在运行时根据表带是进行查询和操作对象。
+
+AOP and Instrumentation
+spring-aop：提供AOP支持
+spring-aspects： 支持AspectJ的集成
+spring-instrument，spring-instrument-tomcat： 对特定应用服务器的代理接口 
+
+Web
+spring-web：提供基本的面向web应用的特性，例如文件上传、面向web的Ioc容器和context、HTTP client、web相关的远程调用
+spring-webmvc：包含了用于web应用的spring的MVC和REST Web Service实现
+spring-websocket：WebSocket和SockJS的实现，包含了对STOMP的支持
+spring-webmvc-portlet：提供用于portlet环境的的MVC实现
+
+Data Access/Integration
+spring-jdbc：提供JDBC抽象层，实现了繁杂的JDBC编码和数据库厂商错误代码的转换工作
+spring-tx：对编程式和声明式事务管理的支持
+spring-orm ：提供对ORM（JPA, JDO, Hibernate）的支持
+spring-oxm：对Object/XML映射的集成支持，例如：JAXB, Castor, XMLBeans, JiBX and XStream
+spring-jms：JMS服务，包含了对消息的生产和消费相关功能，可以集成spring-messaging
+
+Messaging
+spring-messaging：为基于消息的应用提供服务，包含消息的抽象（Message, MessageChannel,MessageHandler）以及相关注解
+
+Test
+spring-test：支持对spring组件的单元测试和集成测试，可以使用JUNIT和TestNG作为测试组件
+
+3.spring IoC
+（1）理解IOC的概念及特点
+	松耦合
+（2）实现
+	使用XML配置的方式实现IOC、使用注解配置IOC
+（3）示例
+	http://spring.cndocs.ml/beans.html#beans-some-examples
+（4）参考
+	https://www.cnblogs.com/best/p/5727935.html
+
+4.spring AOP and
+
+http://www.cnblogs.com/best/p/5736422.html
+
+（1）理解IAOP的概念及特点
+	利用AOP可以对业务逻辑的各个部分进行隔离，从而使得业务逻辑各部分之间的耦合度降低，提高程序的可重用性，同时提高了开发的效率。
+（2）实现
+	使用XML配置的Spring AOP、使用注解配置AOP
+（3）应用场景
+
+（4）参考
+	http://www.cnblogs.com/best/p/5736422.html
+
+5.

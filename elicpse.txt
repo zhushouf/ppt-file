@@ -1,0 +1,3 @@
+eclipse常用快捷键：
+(1)代码格式化：Ctrl+Shift+F
+(2)生成Javadoc注释模块：Alt+Shift+J

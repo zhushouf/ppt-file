@@ -1,0 +1,29 @@
+﻿1.maven的安装与配置
+（1）下载：https://maven.apache.org/download.cgi
+（2）解压： apache-maven-3.5.3-bin.zip
+（3）修改系统环境变量：M2_HOME、PATH
+（4）验证：mvn -v
+（5）修改配置文件：$M2_HOME/conf/settings.xml
+可参考： https://www.cnblogs.com/yangang2013/p/5651906.html
+Maven配置指南及使用规范：https://wenku.baidu.com/view/94b9ffe2f8c75fbfc77db2b7.html
+
+2.maven的使用
+（1）Eclipse集成M2E
+（2）编写pom.xml
+     参考：https://maven.apache.org/pom.html
+（3）test、install、clean、deploy
+     mvn compile：编译项目代码，编译的class文件在target目录下 
+     mvn package：将项目代码打包 
+     mvn clean：清空项目编译结果 
+     mvn install：将项目编译，打包并上传的本地仓库中 
+
+3.Nexus搭建Maven私有仓库
+1、下载
+https://www.sonatype.com/download-oss-sonatype
+2、安装与配置
+https://blog.csdn.net/lewis_007/article/details/53582537
+3、安装后访问，本地私有Nexus地址
+http://192.168.0.85:8081/#welcome
+
+4.HTML
+
